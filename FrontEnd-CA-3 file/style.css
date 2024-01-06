@@ -1,0 +1,233 @@
+*{
+    /* for total background color */
+    background-color:#F2D17E ;
+}
+
+.header{
+    /* for the logo and the name  */
+    display: flex;
+}
+
+/* for logo */
+.logo-img{
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* for the name  */
+.title{
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/* for dialog 1 */
+.msg1{
+    font-size: 35px;
+    padding: 0;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* for the first dialog and the food images */
+.msgdiv2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* the second and the third dialog */
+.img1, .img2{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* food image 1 */
+.img1{
+    margin-right: 100px;
+}
+
+/* food image 2 */
+.img2{
+    margin-left: 100px;
+}
+
+.msg2{
+    font-size: 28px;
+}
+
+.msg3{
+    font-size: 21px;
+}
+
+/* for dialog 2 and 3 */
+.msg2, .msg3{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* for search box */
+#search-btn{
+    font-size: 21px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 620px;
+    margin-top: 21px;
+}
+
+/* for the radom meal */
+#random-meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+/* image of the random meal */
+#meal-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+}
+/* name and category of the random meal */
+#meal-name, #category{
+    padding:0;
+    margin: 0;
+}
+/*for the searched meals */
+#search-result{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: space-around;
+}
+
+/* for the searched meals images */
+.result-image{
+    height: 150px;
+    width: 200px;
+    border-radius: 9px;
+}
+
+/* the message if not found */
+#notfound{
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+/* for meal recipe */
+#meal-recipe{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #cfac42;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+    
+}
+
+#meal-recipe ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+/*for  responsive design */
+@media (min-width: 320px) and (max-width: 600px){
+
+    .title{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-style: italic;
+    }
+
+    .logo-img{
+        height: 70px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    #search-btn{
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-left: 50px;
+    }
+
+    .msg1{
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .msg2{
+        font-size: 18px;
+    }
+    
+    .msg3{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img1{
+        height: 50px;
+        width: 70px;
+        margin-right:20px ;
+    }
+    
+    .img2{
+        height: 50px;
+        width: 70px;
+        margin-left: 30px;
+    }
+
+    #meal-image{
+        height: 80px;
+        width: 100px;
+    }
+
+    #meal-name, #category{
+        font-size: 15px;
+    }
+
+    .result-image{
+        height: 50px;
+        width: 70px;
+        
+    }
+
+    .result-mealname{
+        font-size: 12px;
+    }
+    .result-category{
+        font-size: 15px;
+    }
+
+    #search-result{
+        display: grid;
+        grid-template-columns: repeat(2,130px);
+        justify-content: space-around;
+    }
+
+    #meal-recipe{
+        font-size: 9px;
+        height: 600px;
+        width: 200px;
+    }
+}
